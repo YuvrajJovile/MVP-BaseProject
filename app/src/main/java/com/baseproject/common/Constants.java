@@ -15,6 +15,10 @@ public interface Constants {
         int PLACE_AUTOCOMPLETE_REQUEST_CODE = 1001;
     }
 
+    interface ApiRequestCodes{
+        int GET_API_CODE = 222;
+        int POST_API_CODE = 223;
+    }
 
     interface InternalHttpCode {
         int SUCCESS_CODE = 200;

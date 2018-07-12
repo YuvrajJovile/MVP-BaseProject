@@ -18,8 +18,8 @@ import android.text.format.Time;
 import android.util.Log;
 import android.view.inputmethod.InputMethodManager;
 
+import com.baseproject.library.ExceptionTracker;
 import com.bluelinelabs.logansquare.LoganSquare;
-import com.indieculture.library.ExceptionTracker;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -126,7 +126,7 @@ public class CodeSnippet {
 
     public String getDayAndTime(long time) {
         try {
-            Log.d(TAG,"time: "+time);
+            Log.d(TAG, "time: " + time);
             Calendar calendar = Calendar.getInstance();
             calendar.setTimeInMillis(time);
             SimpleDateFormat format1 = new SimpleDateFormat("E, MMM dd, yyyy @ hh:mm aa", Locale.getDefault());
@@ -446,7 +446,7 @@ public class CodeSnippet {
         void onCancelServiceInstallation();
     }
 
-    public interface DialogListener{
+    public interface DialogListener {
         void onClickPositive();
 
         void onClickNegative();
@@ -502,6 +502,7 @@ public class CodeSnippet {
         String result = sb.toString();
         return result;
     }
+
     public <T> List<T> getListFromJsonString(String jsonString, Class<T> classType) {
         try {
             return LoganSquare.parseList(jsonString, classType);

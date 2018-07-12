@@ -10,7 +10,7 @@ import retrofit2.Retrofit;
 
 public class ApiClient<T> {
 
-    public static final String BASE_URL = ""; //base url
+    public static final String BASE_URL = "https://github.com/"; //base url
 
     public static final String BASE_API = BASE_URL + "";
 

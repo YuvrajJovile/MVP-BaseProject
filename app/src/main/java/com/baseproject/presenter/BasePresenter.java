@@ -3,10 +3,12 @@ package com.baseproject.presenter;
 import android.content.Intent;
 
 import com.baseproject.presenter.ipresenter.IPresenter;
+import com.baseproject.utils.CodeSnippet;
 import com.baseproject.view.iview.IView;
 
 public abstract class BasePresenter implements IPresenter {
     protected String TAG = getClass().getSimpleName();
+    CodeSnippet mCodeSnippet;
 
     private IView iView;
 
